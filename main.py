@@ -1,6 +1,6 @@
-"""encoder_0acb51 - Async task runner."""
+"""encoder_eb9bf2 - Async task runner."""
 import asyncio, json
-TASK_ID = "encoder_0acb51"
+TASK_ID = "encoder_eb9bf2"
 async def fetch_data(url: str) -> dict:
     await asyncio.sleep(0.01)
     return {"url": url, "task": TASK_ID, "status": "fetched"}
